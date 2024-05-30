@@ -24,8 +24,8 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-     # - printf '[{"name":"spring-ecr-service-demo","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-     # - cat imagedefinitions.json
+      - printf '[{"name":"aws-spring-ecs-cluster-updates","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - cat imagedefinitions.json
 artifacts:
   files:
    - imagedefinitions.json
