@@ -1,5 +1,5 @@
 FROM openjdk:17
-EXPOSE 8080
+EXPOSE 9596
 WORKDIR /appsdockerUpdate
 #Copy the jar from target to container
 COPY ./target/springsampledockerupdate.jar /appsdockerUpdate
